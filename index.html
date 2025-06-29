@@ -8,13 +8,42 @@
     <link rel="stylesheet" href="assets/reset.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="icon" type="image/x-icon" href="media/knead2.png" />
-    <title>Seasoning</title>
+    <title>馒头</title>
+    <style>
+      #cycle {
+        --radius: clamp(100px, 40vw, 300px);
+        width: calc(var(--radius) * 2);
+        height: calc(var(--radius) * 2);
+        position: relative;
+        margin: auto;
+      }
+
+      #cycle img {
+        --angle: calc(360deg / var(--total, 10) * var(--i));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: clamp(40px, 15vw, 100px);
+        height: auto;
+        transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(-1 * var(--radius)))
+          rotate(calc(-1 * var(--angle)));
+      }
+    </style>
   </head>
   <body>
-    <a href="1.html">
-      <figure class="slide">
-        <h1>Sensing a Season</h1>
-      </figure>
-    </a>
+    <figure class="slide">
+      <div id="cycle">
+        <a href="1.html"><img src="media/knead1.png" style="--i: 0" alt="Knead stage 1" /></a>
+        <a href="2.html"><img src="media/knead2.png" style="--i: 1" alt="Knead stage 2" /></a>
+        <a href="3.html"><img src="media/rise1.png" style="--i: 2" alt="Rise stage 1" /></a>
+        <a href="4.html"><img src="media/rise2.png" style="--i: 3" alt="Rise stage 2" /></a>
+        <a href="5.html"><img src="media/shape1.png" style="--i: 4" alt="Shape stage 1" /></a>
+        <a href="6.html"><img src="media/shape2.png" style="--i: 5" alt="Shape stage 2" /></a>
+        <a href="7.html"><img src="media/rest1.png" style="--i: 6" alt="Rest stage 1" /></a>
+        <a href="8.html"><img src="media/rest2.png" style="--i: 7" alt="Rest stage 2" /></a>
+        <a href="9.html"><img src="media/cooked1.png" style="--i: 8" alt="Cooked stage 1" /></a>
+        <a href="10.html"><img src="media/cooked2.png" style="--i: 9" alt="Cooked stage 2" /></a>
+      </div>
+    </figure>
   </body>
 </html>

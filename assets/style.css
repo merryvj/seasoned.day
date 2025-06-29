@@ -1,7 +1,9 @@
 html {
-  background: #fafafa;
+  background: dimgray;
 }
 
-h1 {
-  font-size: 3rem;
+figcaption {
+  font-weight: bold;
+  color: yellow;
+  -webkit-text-stroke: 1px black;
 }

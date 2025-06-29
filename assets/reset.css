@@ -4,6 +4,7 @@
 
 html {
   font-family: sans-serif;
+  font-size: 40px;
 }
 
 body {
@@ -35,7 +36,7 @@ figure {
 }
 
 figcaption {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 p {
