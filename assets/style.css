@@ -6,4 +6,5 @@ figcaption {
   font-weight: bold;
   color: yellow;
   -webkit-text-stroke: 1px black;
+  paint-order: stroke fill;
 }
