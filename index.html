@@ -27,12 +27,41 @@
         height: auto;
         transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(-1 * var(--radius)))
           rotate(calc(-1 * var(--angle)));
+        animation: fadeIn 1s ease calc(0.15s * var(--i)) backwards;
+        transform-origin: center top;
+        transition: opacity 0.4s;
+      }
+
+      #cycle img:hover {
+        opacity: 0.6;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 10;
+        animation: fadeIn 1s ease 1.8s backwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
   <body>
     <figure class="slide">
       <div id="cycle">
+        <div class="arrow">
+          <figcaption>↑<br />Start <br />开始</figcaption>
+        </div>
         <a href="1.html"><img src="media/knead1.png" style="--i: 0" alt="Knead stage 1" /></a>
         <a href="2.html"><img src="media/knead2.png" style="--i: 1" alt="Knead stage 2" /></a>
         <a href="3.html"><img src="media/rise1.png" style="--i: 2" alt="Rise stage 1" /></a>
