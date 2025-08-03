@@ -21,8 +21,20 @@
 
       body {
         font-size: 24px;
-        background: #8b5e3c;
+        background: #c49a6c;
         font-family: "National Park", sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+      }
+
+      #logo {
+        width: 300px;
+        fill: red;
       }
 
       main {
@@ -31,7 +43,7 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-        margin-top: 48px;
+        padding: 24px;
       }
 
       section {
@@ -69,20 +81,48 @@
         line-height: 150%;
         font-weight: 500;
       }
+
+      @media (max-width: 500px) {
+        :root {
+          --border-width: 12px;
+        }
+
+        body {
+          font-size: 12px;
+        }
+        main {
+          padding: 8px;
+        }
+
+        section {
+          padding: 12px;
+        }
+        section h3 {
+          margin: 12px;
+          padding-bottom: 6px;
+          border-bottom: dotted 3px var(--primary);
+        }
+
+        section p {
+          margin: 12px 24px;
+        }
+      }
     </style>
   </head>
   <body>
+    <header>
+      <img id="logo" src="./logo.svg" />
+    </header>
     <main>
-      <section>
+      <section style="--primary: #64957a; --accent: #a3ab40">
         <h3>May 3, 2025</h3>
         <p>
           How do I grieve/find closure from this? What did I learn? How am I different now? What does this say about me?
           What can I do now? Who will I become? What is the timeframe for my imagination? How do I be kind to myself?
-          What does true care feel like? What cannot be taken from me? How do I let myself feel, for my sensitivity to
-          become a strength?
+          What does true care feel like? What cannot be taken from me?
         </p>
       </section>
-      <section style="--primary: #74b2e0; --accent: #a3ab40">
+      <section style="--primary: #a3ab40; --accent: #74b2e0">
         <h3>May 11, 2025</h3>
         <p>
           Maybe this song carries me home <br />
@@ -95,7 +135,7 @@
           My body forgotten, left in welts.
         </p>
       </section>
-      <section>
+      <section style="--primary: #74b2e0; --accent: #df4840">
         <h3>May 19, 2025</h3>
         <p>
           Is staying growing the kind of love or integrity I want to offer the world? Can I be honest here? Not just
@@ -103,18 +143,18 @@
           only one doing the emotional labor of making this work?
         </p>
       </section>
-      <section>
+      <section style="--primary: #df4840; --accent: #eeba00">
         <h3>May 30, 2025</h3>
         <p>How do I hold on through this? it’s ease, no?</p>
       </section>
-      <section>
+      <section style="--primary: #eeba00; --accent: #cca883">
         <h3>June 15, 2025</h3>
         <p>
           I did a thought experiment envisioning myself with 1, 5, 10 years to live. It colored a sense of possibility
           and tragedy, how if I go on living for an abstract future. If I can’t make the present feel alive, then what?
         </p>
       </section>
-      <section>
+      <section style="--primary: #cca883; --accent: #88babd">
         <h3>June 20, 2025</h3>
         <p>
           To the horizon – <br />
@@ -126,14 +166,14 @@
           Just to find.
         </p>
       </section>
-      <section>
+      <section style="--primary: #88babd; --accent: #bfba92">
         <h3>June 29, 2025</h3>
         <p>
           My heart is open to the world. Let it break me. Show me what it is made out of and I will be part of the
           making.
         </p>
       </section>
-      <section>
+      <section style="--primary: #bfba92; --accent: #c191c0">
         <h3>July 10, 2025</h3>
         <p>
           And because of this day, I could go on. <br />
@@ -141,11 +181,11 @@
           I asked. I tried. And laughed and it was enough.
         </p>
       </section>
-      <section>
+      <section style="--primary: #c191c0; --accent: #7dcbcc">
         <h3>July 11, 2025</h3>
         <p>LIVE TRUE DANCE FREE</p>
       </section>
-      <section>
+      <section style="--primary: #7dcbcc; --accent: #f17c5a">
         <h3>July 16, 2025</h3>
         <p>
           Making this with love <br />
@@ -153,11 +193,11 @@
           Breaking open, cracking a bit
         </p>
       </section>
-      <section>
+      <section style="--primary: #f17c5a; --accent: #fdc96c">
         <h3>July 23, 2025</h3>
         <p>“I’m so in love with your courage and lust for aliveness”</p>
       </section>
-      <section>
+      <section style="--primary: #fdc96c; --accent: #c5cc2a">
         <h3>July 28, 2025</h3>
         <p>Who is this person and what can she teach me about different ways of being in the world?</p>
       </section>
