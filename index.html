@@ -4,6 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      :root {
+        --border-width: 24px;
+      }
+
+      body {
+        font-size: 24px;
+        background: #8b5e3c;
+        font-family: "National Park", sans-serif;
+      }
+
+      main {
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 48px;
+      }
+
+      section {
+        position: relative;
+        aspect-ratio: 8/5;
+        padding: 24px;
+        background: var(--primary);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+      }
+
+      section::before {
+        content: "";
+        position: absolute;
+        top: var(--border-width);
+        left: var(--border-width);
+        right: var(--border-width);
+        bottom: var(--border-width);
+        background-color: #fafafa;
+      }
+
+      section h3 {
+        position: relative;
+        z-index: 1;
+        margin: 24px;
+        padding-bottom: 16px;
+        font-weight: 500;
+        color: var(--accent);
+        border-bottom: dotted 4px var(--primary);
+      }
+      section p {
+        margin: 24px 64px;
+        position: relative;
+        z-index: 1;
+        color: #594a42;
+        line-height: 150%;
+        font-weight: 500;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section>
+        <h3>May 3, 2025</h3>
+        <p>
+          How do I grieve/find closure from this? What did I learn? How am I different now? What does this say about me?
+          What can I do now? Who will I become? What is the timeframe for my imagination? How do I be kind to myself?
+          What does true care feel like? What cannot be taken from me? How do I let myself feel, for my sensitivity to
+          become a strength?
+        </p>
+      </section>
+      <section style="--primary: #74b2e0; --accent: #a3ab40">
+        <h3>May 11, 2025</h3>
+        <p>
+          Maybe this song carries me home <br />
+          So I don’t have to go there alone <br />
+          A path unseen lit barely by the stars <br />
+          Further from near than from far <br />
+          I’ll eat this soup with parts in float<br />
+          Yet I still can’t rid of this bloat <br />
+          Little I say can truly be felt <br />
+          My body forgotten, left in welts.
+        </p>
+      </section>
+      <section>
+        <h3>May 19, 2025</h3>
+        <p>
+          Is staying growing the kind of love or integrity I want to offer the world? Can I be honest here? Not just
+          once – but over time? When I imagine my future self – calmer, clearer – what would she thank me for? Am I the
+          only one doing the emotional labor of making this work?
+        </p>
+      </section>
+      <section>
+        <h3>May 30, 2025</h3>
+        <p>How do I hold on through this? it’s ease, no?</p>
+      </section>
+      <section>
+        <h3>June 15, 2025</h3>
+        <p>
+          I did a thought experiment envisioning myself with 1, 5, 10 years to live. It colored a sense of possibility
+          and tragedy, how if I go on living for an abstract future. If I can’t make the present feel alive, then what?
+        </p>
+      </section>
+      <section>
+        <h3>June 20, 2025</h3>
+        <p>
+          To the horizon – <br />
+          Unsure what awaits <br />
+          But storms and stills.<br />
+          Still I sail Even if failing.<br />
+          To have made the <br />
+          Journey mine <br />
+          Just to find.
+        </p>
+      </section>
+      <section>
+        <h3>June 29, 2025</h3>
+        <p>
+          My heart is open to the world. Let it break me. Show me what it is made out of and I will be part of the
+          making.
+        </p>
+      </section>
+      <section>
+        <h3>July 10, 2025</h3>
+        <p>
+          And because of this day, I could go on. <br />
+          I said what I meant.<br />
+          I asked. I tried. And laughed and it was enough.
+        </p>
+      </section>
+      <section>
+        <h3>July 11, 2025</h3>
+        <p>LIVE TRUE DANCE FREE</p>
+      </section>
+      <section>
+        <h3>July 16, 2025</h3>
+        <p>
+          Making this with love <br />
+          Dancing, feeling the music <br />
+          Breaking open, cracking a bit
+        </p>
+      </section>
+      <section>
+        <h3>July 23, 2025</h3>
+        <p>“I’m so in love with your courage and lust for aliveness”</p>
+      </section>
+      <section>
+        <h3>July 28, 2025</h3>
+        <p>Who is this person and what can she teach me about different ways of being in the world?</p>
+      </section>
+    </main>
+  </body>
 </html>
